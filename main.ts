@@ -1,5 +1,4 @@
 let tool = 0
-let Puntuazioa = 0
 input.onButtonPressed(Button.A, function () {
     tool = randint(0, 2)
     if (tool == 0) {
@@ -22,15 +21,4 @@ input.onButtonPressed(Button.A, function () {
         basic.showIcon(IconNames.Scissors)
         basic.pause(1000)
     }
-})
-input.onButtonPressed(Button.AB, function () {
-    Puntuazioa = 0
-    basic.pause(1000)
-    basic.showString("A")
-    basic.pause(1000)
-})
-input.onButtonPressed(Button.B, function () {
-    basic.showNumber(Puntuazioa)
-    basic.pause(1000)
-    basic.clearScreen()
 })
